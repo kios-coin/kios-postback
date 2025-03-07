@@ -26,7 +26,6 @@
     "homepage": "",
     "dependencies": {
         "@ethersproject/contracts": "^5.7.0",
-        "acc-service-sdk": "^1.1.7",
         "argparse": "^2.0.1",
         "assert": "^2.0.0",
         "axios": "^1.7.2",
@@ -41,6 +40,7 @@
         "extend": "^3.0.2",
         "google-libphonenumber": "^3.2.33",
         "ip": "^2.0.1",
+        "kios-service-sdk": "^1.2.0",
         "mocha": "10.1.0",
         "moment-timezone": "^0.5.46",
         "mybatis-mapper": "^0.8.0",

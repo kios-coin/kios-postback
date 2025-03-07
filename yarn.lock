@@ -584,24 +584,6 @@
   resolved "https://registry.npmjs.org/@types/urijs/-/urijs-1.19.25.tgz"
   integrity sha512-XOfUup9r3Y06nFAZh3WvO0rBU4OtlfPB/vgxpjg+NRdGU6CN6djdc6OEiH+PcqHCY6eFLo9Ista73uarf4gnBg==
 
-acc-service-sdk@^1.1.7:
-  version "1.1.7"
-  resolved "https://registry.npmjs.org/acc-service-sdk/-/acc-service-sdk-1.1.7.tgz"
-  integrity sha512-q0caTbmEx739XYwI+ilQwnrmZaNmEKXXC6u4CkUEP6EdH251c/G+HanzPw3n6Js4s5GFDuCQf5m+mepkfJC8hg==
-  dependencies:
-    "@ethersproject/abi" "^5.7.0"
-    "@ethersproject/abstract-signer" "^5.7.0"
-    "@ethersproject/bignumber" "^5.7.0"
-    "@ethersproject/bytes" "^5.7.0"
-    "@ethersproject/constants" "^5.7.0"
-    "@ethersproject/experimental" "^5.7.0"
-    "@ethersproject/keccak256" "^5.7.0"
-    "@ethersproject/wallet" "^5.7.0"
-    axios "^1.7.3"
-    google-libphonenumber "^3.2.33"
-    node-cron "^3.0.3"
-    urijs "^1.19.7"
-
 accepts@~1.3.8:
   version "1.3.8"
   resolved "https://registry.npmjs.org/accepts/-/accepts-1.3.8.tgz"
@@ -1757,6 +1739,24 @@ js-yaml@^3.13.1, js-yaml@^3.14.0:
   dependencies:
     argparse "^1.0.7"
     esprima "^4.0.0"
+
+kios-service-sdk@^1.2.0:
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/kios-service-sdk/-/kios-service-sdk-1.2.0.tgz#63839a67c06e965230dc5a650827d96a6b43dcc6"
+  integrity sha512-e2SYNWECgpr3CERMXLt5BF6+S0yMrLIddgEgcddM8LwpK88Sp6t22AK94Q5GItYOW3hafAPJee+Co2fY8vq9pA==
+  dependencies:
+    "@ethersproject/abi" "^5.7.0"
+    "@ethersproject/abstract-signer" "^5.7.0"
+    "@ethersproject/bignumber" "^5.7.0"
+    "@ethersproject/bytes" "^5.7.0"
+    "@ethersproject/constants" "^5.7.0"
+    "@ethersproject/experimental" "^5.7.0"
+    "@ethersproject/keccak256" "^5.7.0"
+    "@ethersproject/wallet" "^5.7.0"
+    axios "^1.7.3"
+    google-libphonenumber "^3.2.33"
+    node-cron "^3.0.3"
+    urijs "^1.19.7"
 
 kuler@^2.0.0:
   version "2.0.0"

@@ -1,11 +1,10 @@
 import { Config } from "../common/Config";
 import { logger } from "../common/Logger";
-import { Metrics } from "../metrics/Metrics";
 import { PostBackStorage } from "../storage/PostBackStorage";
 import { ProvisionStatus } from "../types";
 import { Scheduler } from "./Scheduler";
 
-import { BOACoin, ProviderClient } from "acc-service-sdk";
+import { BOACoin, NetWorkType, ProviderClient } from "kios-service-sdk";
 
 import { ethers } from "ethers";
 
@@ -81,10 +80,10 @@ export class PostBackScheduler extends Scheduler {
 
                     const network =
                         this.config.setting.network === "testnet"
-                            ? 0
+                            ? NetWorkType.kios_testnet
                             : this.config.setting.network === "mainnet"
-                            ? 1
-                            : 2;
+                            ? NetWorkType.kios_mainnet
+                            : NetWorkType.kios_mainnet;
                     const providerClient = new ProviderClient(network, agent);
                     if (item.user_id_type === 0) {
                         item.tx_hash = await providerClient.provideToAddress(item.provider, item.user_id, amount);
